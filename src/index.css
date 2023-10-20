@@ -1,0 +1,36 @@
+:root {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box; 
+}
+
+html {
+  /* 
+  The rem unit will use this size as reference, 
+  it's set to a percentage to keep the users ability to change the root font-size 
+  (bad practice to set it with px) 
+  */
+  font-size: 62.5%; /* This equals to 10px (10/16 = 0.625, 16px is the browsers default size) */
+}
